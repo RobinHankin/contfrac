@@ -1,0 +1,8 @@
+Package: contfrac
+Title: Continued Fractions
+Version: 1.1-11
+Author: Robin K. S. Hankin
+Description: Various utilities for evaluating continued fractions.
+Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
+License: GPL-2
+Packaged: 2011-03-28 07:48:06 UTC; rksh
