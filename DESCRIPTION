@@ -1,6 +1,6 @@
 Package: contfrac
 Title: Continued Fractions
-Version: 1.1-11
+Version: 1.1-12
 Author: Robin K. S. Hankin
 Description: Various utilities for evaluating continued fractions.
 Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
