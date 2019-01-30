@@ -80,17 +80,44 @@ b_0+
 
 Continued fractions are an important branch of
 mathematics~\citep{lorentzen} and are useful in a range of numerical
-disciplines~\citep{hankin2015}.  For example, Ramanujan offered
+disciplines~\citep{hankin2015}, and I will give two examples here.
+Firstly, continued fractions furnish, in a well-defined sense, the
+``best possible'' rational approximations to a given real
+number~\citep{hall_and_knight}.  For example, we may take the
+continued fraction
 
-\newcommand{\ram}[1]{e^{-#1\pi\sqrt{5}}}
-                          
 \begin{equation}
-  \left[
-      \frac{\sqrt{5}}{1+\sqrt[5]{5^{3/4}\left(\frac{\sqrt{5}-1}{2}\right)^{5/2}-1}} - \frac{\sqrt{5}+1}{2}\right]^{e^{2\pi/\sqrt{5}}}=
-\cfrac{1}{1+\cfrac{\ram{2}}{1+\cfrac{\ram{4}}{1+\cfrac{\ram{6}}{1+\ddots}}}}
+  \pi=3+\frac{1}{7+}\,
+\frac{1}{15+}\,
+\frac{1}{1+}\,
+\frac{1}{291+}\,
+\frac{1}{1+\cdots}
 \end{equation}
 
+to deduce that $\frac{22}{7}$ and $\frac{355}{113}$ are close to
+$\pi$, being the second and fourth convergents respectively.
 
+Secondly, continued fractions give alternatives to Taylor or Maclaurin
+series for many functions.  For example, we have
+
+\begin{equation}
+\tan(z)=
+\frac{z}{1-}\,
+\frac{z^2}{3-}\,
+\frac{z^2}{5-}\,
+\frac{z^2}{7-}\,
+\frac{z^2}{9-\cdots}\qquad z/\pi+1/2\not\in\mathbb{Z}
+\end{equation}
+
+and this series can be useful in numerical work.  Continued fractions
+frequently reveal astonishing behaviour.  For example, Khinchin proved
+that, for almost all real numbers $x$, the geometric mean of the $a_i$
+in the simple continued fraction representation of $x$ tends to a
+constant, approximately equal to 2.685, independently of the value of
+$x$.
+
+
+\section{The package in use}
 
 
 \bibliography{contfrac}
