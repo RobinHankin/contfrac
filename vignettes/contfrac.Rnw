@@ -1,0 +1,89 @@
+\documentclass[nojss]{jss}  
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfig}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% declarations for jss.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% just as usual
+\author{Robin K. S. Hankin}
+\title{Continued fractions in \proglang{R}:
+introducing the \pkg{contfrac} package}
+
+
+%\VignetteIndexEntry{A vignette for the contfrac package}
+%% for pretty printing and a nice hypersummary also set:
+%% \Plainauthor{Achim Zeileis, Second Author} %% comma-separated
+
+\Plaintitle{Continued fractions in R
+introducing the contfracpackage}
+\Shorttitle{The \pkg{contfrac} package}
+
+
+
+%% an abstract and keywords
+\Abstract{
+  Here I introduce the \pkg{contfrac} package, for
+  manipulating continued fractions.
+}
+
+\Keywords{Continued fractions}
+% -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
+
+\Address{
+Robin K. S. Hankin\\
+AUT University\\
+Auckland\\
+New Zealand\\
+E-mail: \email{hankin.robin@gmail.com}
+
+}
+
+%% need no \usepackage{Sweave.sty}
+
+\begin{document}
+
+\section{Overview}
+
+A {\em continued fraction} is an expression of the form
+
+\begin{equation}
+a_0+\cfrac{1}{a_1+\cfrac{1}{a_2+\cfrac{1}{a_3+\ddots}}}
+\end{equation}
+
+provided that the sequence
+\begin{equation}
+f_0=a_0, \qquad
+f_1=a_0+\frac{1}{a_1}, \qquad
+f_2=a_0 + \frac{1}{a_1+\frac{1}{a_2}},
+\ldots
+\end{equation}
+
+\noindent converges.  A {\em generalized continued fraction} is of the
+form
+
+\begin{equation}
+b_0+\cfrac{a_1}{b_1+\cfrac{a_2}{b_2+\cfrac{a_3}{b_3+\ddots}}}
+\end{equation}
+
+Continued fractions are an important branch of
+mathematics~\citep{lorentzen} and are useful in a range of numerical
+disciplines~\citep{hankin2015}.  For example, Ramanujan offered
+
+\newcommand{\ram}[1]{e^{-#1\pi\sqrt{5}}}
+                          
+\begin{equation}
+  \left[
+      \frac{\sqrt{5}}{1+\sqrt[5]{5^{3/4}\left(\frac{\sqrt{5}-1}{2}\right)^{5/2}-1}} - \frac{\sqrt{5}+1}{2}\right]^{e^{2\pi/\sqrt{5}}}=
+\cfrac{1}{1+\cfrac{\ram{2}}{1+\cfrac{\ram{4}}{1+\cfrac{\ram{6}}{1+\ddots}}}}
+\end{equation}
+
+
+
+
+\bibliography{contfrac}
+\end{document}
