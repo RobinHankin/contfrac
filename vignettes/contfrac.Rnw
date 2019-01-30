@@ -23,8 +23,6 @@ introducing the \pkg{contfrac} package}
 introducing the contfracpackage}
 \Shorttitle{The \pkg{contfrac} package}
 
-
-
 %% an abstract and keywords
 \Abstract{
   Here I introduce the \pkg{contfrac} package, for
@@ -46,7 +44,6 @@ E-mail: \email{hankin.robin@gmail.com}
 %% need no \usepackage{Sweave.sty}
 
 \begin{document}
-
 \section{Overview}
 
 A {\em continued fraction} is an expression of the form
@@ -68,6 +65,17 @@ form
 
 \begin{equation}
 b_0+\cfrac{a_1}{b_1+\cfrac{a_2}{b_2+\cfrac{a_3}{b_3+\ddots}}}
+\end{equation}
+
+but for reasons of typographical convenience this would usually be
+written
+
+\begin{equation}
+b_0+
+\frac{a_1}{b_1+}\,
+\frac{a_2}{b_2+}\,
+\frac{a_3}{b_3+}\,
+\frac{a_4}{b_4+\cdots}.
 \end{equation}
 
 Continued fractions are an important branch of
