@@ -2,8 +2,8 @@
 
 void c_contfrac(const double *a, const double *b, const int *n, double *f, double *tol)
 {
-	double TINY = 1e-30;
-	double EPS = 2.22044604925031e-16;
+	const double TINY = 1e-30;
+	const double EPS = 2.22044604925031e-16;
 	double C,D,Delta;
 	int j;
 
@@ -36,8 +36,8 @@ void c_contfrac(const double *a, const double *b, const int *n, double *f, doubl
 
 void c_contfrac_complex(const double *ar, const double *ai, const double *br, const double *bi, const int *n, double *fr, double *fi, double *tol)
 {
-	double TINY = 1e-30;
-	double EPS = 2.22044604925031e-16;
+	const double TINY = 1e-30;
+	const double EPS = 2.22044604925031e-16;
 	double Cr, Ci, Dr, Di, Deltar, Deltai;
 	double jj, tempr, tempi, Cinvr, Cinvi;
 	int j;
