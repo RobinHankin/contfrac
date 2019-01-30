@@ -1,4 +1,4 @@
-"CF" <- function(a, finite = FALSE, tol=0){
+`CF` <- function(a, finite = FALSE, tol=0){
   ii <- is.infinite(a)
   if(any(ii)){
     n <- min(which(ii))
@@ -10,7 +10,7 @@
   return(GCF(a=rep(1,length(a)), b=a, b0=b0, finite=finite, tol=tol))
 }
  
-"GCF" <- function(a, b, b0=0, finite=FALSE, tol=0){
+`GCF` <- function(a, b, b0=0, finite=FALSE, tol=0){
   stopifnot(length(b) == length(a))
   stopifnot(length(b0) == 1)
   stopifnot(length(a) > 0)
@@ -55,7 +55,7 @@
   }
 }
 
-"gconvergents" <- function(a,b,b0=0){
+`gconvergents` <- function(a, b, b0=0){
   n <- length(a)
   stopifnot(length(a) == length(b))
   stopifnot(length(a) > 0)
@@ -94,11 +94,11 @@
   }
 }
 
-"convergents" <- function(a){
+`convergents` <- function(a){
   gconvergents(a=rep(1,length(a)-1),b=a[-1],b0=a[1])
 }
 
-"as_cf" <- function(x, n=10){
+`as_cf` <- function(x, n=10){
   stopifnot(length(x)==1)
   stopifnot(is.double(x))
   out <- double(n)
