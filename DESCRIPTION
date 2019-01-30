@@ -1,9 +1,9 @@
 Package: contfrac
 Title: Continued Fractions
 Version: 1.1-13
-Author: Robin K. S. Hankin
+Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
 Description: Various utilities for evaluating continued fractions.
 Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
 License: GPL-2
-Packaged: 2011-03-28 07:48:06 UTC; rksh
+Packaged: 2019-01-29
 URL: https://github.com/RobinHankin/contfrac.git
