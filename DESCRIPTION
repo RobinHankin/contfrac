@@ -5,5 +5,4 @@ Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cr
 Description: Various utilities for evaluating continued fractions.
 Maintainer: Robin K. S. Hankin <hankin.robin@gmail.com>
 License: GPL-2
-Packaged: 2019-01-29
 URL: https://github.com/RobinHankin/contfrac.git
