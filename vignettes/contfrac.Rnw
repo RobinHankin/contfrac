@@ -60,8 +60,9 @@ f_2=a_0 + \frac{1}{a_1+\frac{1}{a_2}},
 \ldots
 \end{equation}
 
-\noindent converges.  A {\em generalized continued fraction} is of the
-form
+\noindent converges.  This is written
+$\left[a_0;a_1,a_2,\ldots\right]$ for convenience.  A {\em generalized
+  continued fraction} is of the form
 
 \begin{equation}
 b_0+\cfrac{a_1}{b_1+\cfrac{a_2}{b_2+\cfrac{a_3}{b_3+\ddots}}}
@@ -80,9 +81,11 @@ b_0+
 
 Continued fractions are an important branch of
 mathematics~\citep{lorentzen} and are useful in a range of numerical
-disciplines~\citep{hankin2015}, and I will give two examples here.
-Firstly, continued fractions furnish, in a well-defined sense, the
-``best possible'' rational approximations to a given real
+disciplines~\citep{hankin2015}, and I will give some numerical
+examples here.
+
+Continued fractions furnish, in a well-defined sense, the ``best
+possible'' rational approximations to a given real
 number~\citep{hall_and_knight}.  For example, we may take the
 continued fraction
 
@@ -95,10 +98,45 @@ continued fraction
 \end{equation}
 
 to deduce that $\frac{22}{7}$ and $\frac{355}{113}$ are close to
-$\pi$, being the second and fourth convergents respectively.
+$\pi$, being the second and fourth convergents respectively.  The
+\proglang{R} idiom for this would use \code{as_cf()} which uses
+numerical methods to calculate the first few terms:
 
-Secondly, continued fractions give alternatives to Taylor or Maclaurin
-series for many functions.  For example, we have
+<<>>=
+library("contfrac")
+as_cf(pi, n=7)  # calculate the first 7 terms
+@ 
+
+We can expand the first few terms of the series and verify that the
+series does converge to $\pi$ with function
+\code{convergents()}:
+
+
+<<>>=
+(jj <- convergents(as_cf(pi,n=7)))
+jj$A/jj$B - pi
+@ 
+
+(the signs alternate and decrease in absolute value).  Because the
+package uses standard IEEE precision, the continued fraction expansion
+for any non-rational number will eventually succumb to rounding error.
+We may investigate this using quadratic surds whose expansions are
+repeating patterns; the most famous would be that of
+$\phi=\frac{1+\sqrt{5}}{2}=\left[1;1,1,1,1,\ldots\right]$:
+
+<<>>=
+(phi <- (1+sqrt(5))/2)
+as_cf(phi,n=50)
+rle(as_cf(phi,n=50))
+@ 
+
+so in this case we can see that the first 38 terms are accurate.
+
+\subsection*{Generalized continued fractions}
+
+The package provides functionality for generalized continued
+fractions, which give alternatives to Taylor or Maclaurin series for
+many functions.  For example, we have
 
 \begin{equation}
 \tan(z)=
@@ -106,19 +144,16 @@ series for many functions.  For example, we have
 \frac{z^2}{3-}\,
 \frac{z^2}{5-}\,
 \frac{z^2}{7-}\,
-\frac{z^2}{9-\cdots}\qquad z/\pi+1/2\not\in\mathbb{Z}
+\frac{z^2}{9-}\cdots\qquad z/\pi+1/2\not\in\mathbb{Z}
 \end{equation}
 
-and this series can be useful in numerical work.  Continued fractions
-frequently reveal astonishing behaviour.  For example, Khinchin proved
-that, for almost all real numbers $x$, the geometric mean of the $a_i$
-in the simple continued fraction representation of $x$ tends to a
-constant, approximately equal to 2.685, independently of the value of
-$x$.
+and we can show this series in \proglang{R} as follows:
 
-
-\section{The package in use}
-
+<<>>=
+tan_cf <- function(z,n=20){GCF(c(z,rep(-z^2,n-1)),seq(from=1,by=2,len=n))}
+z <- 1+1i
+tan(z) - tan_cf(z) # should be small
+@ 
 
 \bibliography{contfrac}
 \end{document}
