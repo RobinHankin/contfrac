@@ -110,3 +110,23 @@
   }
   out
 }
+
+`nconv` <- function(a,give=FALSE){
+    jj <- convergents(a)
+    if(give){
+        return(jj$A/jj$B)
+    } else {
+        n <- length(a)
+        return(jj$A[n]/jj$B[n])
+    }
+}
+
+`ngconv` <- function(a, b, b0=0, give=FALSE){
+    jj <- gconvergents(a,b,b0)
+    if(give){
+        return(jj$A/jj$B)
+    } else {
+        n <- length(a)
+        return(jj$A[n]/jj$B[n])
+    }
+}

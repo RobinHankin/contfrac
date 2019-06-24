@@ -1,6 +1,8 @@
 \name{convergents}
 \alias{convergents}
 \alias{gconvergents}
+\alias{nconv}
+\alias{ngconv}
 \alias{c_contfrac}
 \alias{c_contfrac_complex}
 \alias{c_convergents}
@@ -12,6 +14,8 @@
 \usage{
 convergents(a)
 gconvergents(a,b, b0 = 0)
+nconv(a, give=FALSE)
+ngconv(a, b, b0 = 0, give=FALSE)
 }
 \arguments{
   \item{a,b}{In function \code{convergents()}, the elements of \code{a}
@@ -20,6 +24,9 @@ gconvergents(a,b, b0 = 0)
     the elements of \code{a} are the partial numerators and the elements
     of \code{b} the partial denominators}
   \item{b0}{The floor of the fraction}
+  \item{give}{Boolean, with \code{TRUE} meaning to return all
+    convergents, and default \code{FALSE} meaning to return the final
+    partial convergent}
 }
 \details{
 
@@ -45,6 +52,10 @@ off-by-one issue).
 }}}}}}{ommitted: see PDF} 	
 
 where \code{a} = \eqn{a_1,a_2,\ldots}{a_1,a_2,...}
+
+Functions \code{nconv()} and \code{ngconv()} are convenience wrappers
+that return the numerical values of the convergents.
+
 }
 \value{
   Returns a list of two elements, \code{A} for the numerators and
@@ -72,6 +83,7 @@ jj$A/jj$B - pi     # should get smaller
 
 convergents(rep(1,10))
 
+nconv(1:6,give=TRUE)
 
 }
 \keyword{math}
