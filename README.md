@@ -8,6 +8,7 @@ Continued fractions in R
 [![Build
 Status](https://travis-ci.org/RobinHankin/contfrac.svg?branch=master)](https://travis-ci.org/RobinHankin/contfrac)
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/contfrac)](https://cran.r-project.org/package=contfrac)
+[![Rdoc](http://www.rdocumentation.org/badges/version/contfrac)](http://www.rdocumentation.org/packages/contfrac)
 <!-- badges: end -->
 
 # Continued fractions
