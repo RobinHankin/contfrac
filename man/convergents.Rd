@@ -37,7 +37,7 @@ Function \code{convergents()} returns partial convergents of the continued fract
     \frac{1}{a_3+
     \frac{1}{a_4+
     \frac{1}{a_5+\ddots
-}}}}}}{ommitted: see PDF} 	
+}}}}}}{see PDF} 	
 
 where \code{a} = \eqn{a_0,a_1,a_2,\ldots}{a_0,a_1,a_2,...} (note the
 off-by-one issue).
@@ -49,7 +49,7 @@ off-by-one issue).
     \frac{a_3}{b_3+
     \frac{a_4}{b_4+
     \frac{a_5}{b_5+\ddots
-}}}}}}{ommitted: see PDF} 	
+}}}}}}{see PDF} 	
 
 where \code{a} = \eqn{a_1,a_2,\ldots}{a_1,a_2,...}
 
