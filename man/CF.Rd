@@ -3,7 +3,7 @@
 \alias{GCF}
 \title{Continued fraction convergents}
 \description{
-Returns continued fraction convergent using the modified Lenz's
+Returns continued fraction convergent using the modified Lentz's
 algorithm; function \code{CF()} deals with continued fractions and
 \code{GCF()} deals with generalized continued fractions.
 }
@@ -17,7 +17,7 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
     the partial numerators and the elements of \code{b} the partial
     denominators} 
   \item{finite}{Boolean, with default \code{FALSE} meaning to iterate
-    Lenz's algorithm until convergence (a warning is given if the
+    Lentz's algorithm until convergence (a warning is given if the
     sequence has not converged); and \code{TRUE} meaning to evaluate the
     finite continued fraction}
   \item{b0}{In function \code{GCF()}, floor of the continued fraction}
@@ -30,7 +30,7 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
     W. T. Vetterling 1992.  \emph{Numerical recipes 3rd edition: the art of
       scientific computing}.  Cambridge University Press; section 5.2
     \dQuote{Evaluation of continued fractions}
-    \item W. J. Lenz 1976.  Generating Bessel functions in Mie
+    \item W. J. Lentz 1976.  Generating Bessel functions in Mie
     scattering calculations using continued fractions.  \emph{Applied
       Optics}, 15(3):668-671
   }
