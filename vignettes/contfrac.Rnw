@@ -34,8 +34,7 @@ introducing the contfracpackage}
 
 \Address{
 Robin K. S. Hankin\\
-AUT University\\
-Auckland\\
+University of Stirling\\
 New Zealand\\
 E-mail: \email{hankin.robin@gmail.com}
 
