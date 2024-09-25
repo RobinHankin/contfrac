@@ -23,6 +23,7 @@ knitr::opts_chunk$set(
 [![Build Status](https://travis-ci.org/RobinHankin/contfrac.svg?branch=master)](https://travis-ci.org/RobinHankin/contfrac)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/contfrac)](https://cran.r-project.org/package=contfrac)
 [![Rdoc](http://www.rdocumentation.org/badges/version/contfrac)](http://www.rdocumentation.org/packages/contfrac)
+[![R-CMD-check](https://github.com/RobinHankin/contfrac/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RobinHankin/contfrac/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 
