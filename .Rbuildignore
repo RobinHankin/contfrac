@@ -2,3 +2,11 @@
 ^\.Rproj\.user$
 ^README\.Rmd
 ^\.travis\.yml$
+^.devcontainer$
+^CODE_OF_CONDUCT.md$
+^CONTRIBUTING.md$
+^\.github$
+^codecov\.yml$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
