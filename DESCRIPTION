@@ -1,5 +1,6 @@
 Package: contfrac
 Title: Continued Fractions
+Depends: R (>= 4.2.0)
 Version: 1.1-13
 Authors@R: person(given=c("Robin", "K. S."), family="Hankin", role = c("aut","cre"), email="hankin.robin@gmail.com", comment = c(ORCID = "0000-0001-5982-0415"))
 Description: Various utilities for evaluating continued fractions.
