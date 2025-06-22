@@ -25,8 +25,6 @@ void c_contfrac(const double *a, const double *b, const int *n, double *f, doubl
 		*f = (*f) * Delta;
 		if( ( (Delta - 1.0) <= EPS) && ((1.0 - Delta) <= EPS)){ 
 			*tol = Delta -1.0;
-			for(j++ ; j < *n ; j++){
-			}
 			return;
 		}
 	}
