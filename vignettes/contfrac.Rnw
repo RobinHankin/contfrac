@@ -49,7 +49,6 @@ Robin K. S. Hankin\\%\orcid{https://orcid.org/0000-0001-5982-0415}\\
 University of Stirling\\
 Scotland\\
 E-mail: \email{hankin.robin@gmail.com}
-
 }
 
 %% need no \usepackage{Sweave.sty}
