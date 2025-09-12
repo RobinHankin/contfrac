@@ -19,6 +19,8 @@ introducing the \pkg{contfrac} package}
 %% for pretty printing and a nice hypersummary also set:
 %% \Plainauthor{Achim Zeileis, Second Author} %% comma-separated
 
+%% for pretty printing and a nice hypersummary also set:
+\Plainauthor{Robin K. S. Hankin}
 \Plaintitle{Continued fractions in R: introducing the contfrac package}
 \Shorttitle{The \pkg{contfrac} package}
 
@@ -29,7 +31,18 @@ introducing the \pkg{contfrac} package}
 }
 
 \Keywords{Continued fractions}
-% -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
+
+%% publication information
+%% NOTE: This needs to filled out ONLY IF THE PAPER WAS ACCEPTED.
+%% If it was not (yet) accepted, leave them commented.
+%% \Volume{VOL}
+%% \Issue{ISS}
+%% \Month{MONTH}
+%% \Year{YEAR}
+%% \Submitdate{yyyy-mm-dd}
+%% \Acceptdate{yyyy-mm-dd}
+%% \Repository{https://doi.org/10.9999/nonexistent-article}
+
 
 \Address{
 Robin K. S. Hankin\\
