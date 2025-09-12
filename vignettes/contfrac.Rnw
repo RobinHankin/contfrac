@@ -19,8 +19,7 @@ introducing the \pkg{contfrac} package}
 %% for pretty printing and a nice hypersummary also set:
 %% \Plainauthor{Achim Zeileis, Second Author} %% comma-separated
 
-\Plaintitle{Continued fractions in R
-introducing the contfracpackage}
+\Plaintitle{Continued fractions in R: introducing the contfrac package}
 \Shorttitle{The \pkg{contfrac} package}
 
 %% an abstract and keywords
