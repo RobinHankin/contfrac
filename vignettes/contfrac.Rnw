@@ -22,7 +22,7 @@
 %% for pretty printing and a nice hypersummary also set:
 \Plainauthor{Robin K. S. Hankin}
 
-\Plaintitle{Continued fractions in \proglang{R}: introducing the \pkg{contfrac} package}
+\Plaintitle{Continued fractions in {R}: introducing the {contfrac} package}
 \Shorttitle{The \pkg{contfrac} package}
 
 %% an abstract and keywords
