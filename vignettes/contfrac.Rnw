@@ -21,7 +21,7 @@ introducing the \pkg{contfrac} package}
 
 %% for pretty printing and a nice hypersummary also set:
 \Plainauthor{Robin K. S. Hankin}
-\Plaintitle{Continued fractions in R: introducing the contfrac package}
+\Plaintitle{Continued fractions in \proglang{R}: introducing the \pkg{contfrac} package}
 \Shorttitle{The \pkg{contfrac} package}
 
 %% an abstract and keywords
@@ -56,9 +56,15 @@ E-mail: \email{hankin.robin@gmail.com}
 \begin{document}
 
 
-\hfill\includegraphics[width=1in]{\Sexpr{system.file("help/figures/contfrac.png",package="contfrac")}}
-
 \section{Overview}
+
+\setlength{\intextsep}{0pt}
+\begin{wrapfigure}{r}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=1in]{\Sexpr{system.file("help/figures/contfrac.png",package="contfrac")}}
+\end{center}
+\end{wrapfigure}
+
 
 A {\em continued fraction} is an expression of the form
 
