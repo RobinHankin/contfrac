@@ -27,11 +27,11 @@
 
 %% an abstract and keywords
 \Abstract{
-  Here I introduce the \pkg{contfrac} package, for
-  manipulating continued fractions.
+
+  Here I introduce the \pkg{contfrac} package, for manipulating real
+  or complex continued fractions.  IEEE arithmetic is used and the
+  limitations of finite-precision calculation are discussed.
 }
-
-
 
 %% publication information
 %% NOTE: This needs to filled out ONLY IF THE PAPER WAS ACCEPTED.
