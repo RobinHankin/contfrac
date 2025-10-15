@@ -10,3 +10,8 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^inst/example_article_contfrac.Rnw$
+^inst/read.me$
+^inst/contfrac_stickermaker.R$
+^inst/contfrac_icon.tex$
+^inst/contfrac_icon.pdf$
