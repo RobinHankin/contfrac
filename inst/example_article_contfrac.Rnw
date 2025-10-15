@@ -11,7 +11,7 @@
 
 
 %% just as usual
-\author{Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}
+\author{Robin K. S. Hankin\orcid{https://orcid.org/0000-0001-5982-0415}}
 \title{Continued fractions in \proglang{R}: introducing the \pkg{contfrac} package}
 
 
