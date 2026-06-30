@@ -44,6 +44,7 @@
 \Submitdate{0000-00-00}
 \Acceptdate{0000-00-00}
 \Repository{https://github.com/RobinHankin/contfrac} %% this line for Tragula
+\DOI{10.5555/12345678}
 
 \Keywords{Continued fractions}
 
