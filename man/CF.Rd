@@ -37,7 +37,7 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
 }
 \author{Robin K. S. Hankin}
 \details{
-  Function \code{CF()} treats the first element of its argument as the
+  Function \code{CF()} takes the first element of its argument to be the
   integer part of the convergent.
 
   Function \code{CF()} is a wrapper for \code{GCF()}; it includes
