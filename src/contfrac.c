@@ -10,6 +10,7 @@ void c_contfrac(const double *a, const double *b, const int *n, double *f, doubl
 	*f = TINY;
 	C = *f;
 	D = 0.0;
+	Delta = 0.0;
 
 	for(j=0 ; j < *n ; j++){
 		D = b[j] + a[j]*D;
@@ -46,6 +47,9 @@ void c_contfrac_complex(const double *ar, const double *ai, const double *br, co
 	Ci = *fi;
 	Dr = 0.0;
 	Di = 0.0;
+
+	Deltar = 0.0;
+	Deltai = 0.0;
 
 	for(j=0 ; j < *n ; j++){
 
