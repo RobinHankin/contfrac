@@ -5,14 +5,13 @@ void c_contfrac(const double *a, const double *b, const int *n, double *f, doubl
 	const double TINY = 1e-30;
 	const double EPS = 2.22044604925031e-16;
 	double C,D,Delta;
-	int j;
 
 	*f = TINY;
 	C = *f;
 	D = 0.0;
 	Delta = 0.0;
 
-	for(j=0 ; j < *n ; j++){
+	for(int j=0 ; j < *n ; j++){
 		D = b[j] + a[j]*D;
 		if(D == 0.0){
 			D = TINY;
@@ -39,7 +38,6 @@ void c_contfrac_complex(const double *ar, const double *ai, const double *br, co
 	const double EPS = 2.22044604925031e-16;
 	double Cr, Ci, Dr, Di, Deltar, Deltai;
 	double jj, tempr, tempi, Cinvr, Cinvi;
-	int j;
 
 	*fr = TINY;
 	*fi = 0.0;
@@ -51,7 +49,7 @@ void c_contfrac_complex(const double *ar, const double *ai, const double *br, co
 	Deltar = 0.0;
 	Deltai = 0.0;
 
-	for(j=0 ; j < *n ; j++){
+	for(int j=0 ; j < *n ; j++){
 
 		tempr = Dr;
 		tempi = Di;
