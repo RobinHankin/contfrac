@@ -3,15 +3,11 @@
 #include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
 
-/* FIXME: 
-   Check these declarations against the C/Fortran source code.
-*/
-
 /* .C calls */
-extern void c_contfrac(void *, void *, void *, void *, void *);
-extern void c_contfrac_complex(void *, void *, void *, void *, void *, void *, void *, void *);
-extern void c_convergents(void *, void *, void *, void *, void *, void *);
-extern void c_convergents_complex(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+extern void c_contfrac(const double *, const double *, const int *, double *, double *);
+extern void c_contfrac_complex(const double *, const double *, const double *, const double *, const int *, double *, double *, double *);
+extern void c_convergents(const double *, const double *, const double *, const int *, double *, double *);
+extern void c_convergents_complex(const double *, const double *, const double *, const double *, const double *, const double *, const int *, double *, double *, double *, double *);
 
 static const R_CMethodDef CEntries[] = {
     {"c_contfrac",            (DL_FUNC) &c_contfrac,             5},
