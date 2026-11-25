@@ -9,10 +9,10 @@ algorithm; function \code{CF()} deals with continued fractions and
 }
 \usage{
 CF(a, finite = FALSE, tol=0)
-GCF(a,b, b0=0, finite = FALSE, tol=0)
+GCF(a, b, b0=0, finite = FALSE, tol=0)
 }
 \arguments{
-  \item{a,b}{In function \code{CF()}, the elements of \code{a} are the
+  \item{a, b}{In function \code{CF()}, the elements of \code{a} are the
     partial denominators; in \code{GCF()} the elements of \code{a} are
     the partial numerators and the elements of \code{b} the partial
     denominators} 
@@ -54,13 +54,13 @@ GCF(a,b, b0=0, finite = FALSE, tol=0)
 \seealso{\code{\link{convergents}}}
 \examples{
 
-phi <- (sqrt(5)+1)/2
-phi_cf <- CF(rep(1,100))     # phi = [1;1,1,1,1,1,...]
+phi <- (sqrt(5)+1) / 2
+phi_cf <- CF(rep(1, 100))     # phi = [1;1,1,1,1,1,...]
 phi - phi_cf     # should be small
 
 # The tan function:
 "tan_cf" <- function(z,n=20){
-     GCF(c(z, rep(-z^2,n-1)), seq(from=1,by=2, len=n))
+     GCF(c(z, rep(-z^2,n-1)), seq(from=1, by=2, len=n))
 }
 
 z <- 1+1i
@@ -77,7 +77,7 @@ as_cf(exp(1),25)    # OK up to element 21 (which should be 14)
 
 
   # An identity of Euler's:
-  jj <- GCF(a=seq(from=2,by=2,len=30), b=seq(from=3,by=2,len=30), b0=1) 
+  jj <- GCF(a = seq(from=2, by=2, len=30), b = seq(from=3, by=2, len=30), b0=1) 
   jj - 1/(exp(0.5)-1)   # should be small
 
 }
