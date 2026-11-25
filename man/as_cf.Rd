@@ -27,7 +27,7 @@ as_cf(exp(1),20)
 f <- function(x){CF(as_cf(x,30),TRUE) - x}
 
 x <- runif(40)
-plot(sapply(x,f))
+plot(sapply(x, f))
 
 
 }

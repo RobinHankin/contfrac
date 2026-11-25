@@ -13,12 +13,12 @@
 }
 \usage{
 convergents(a)
-gconvergents(a,b, b0 = 0)
-nconv(a, give=FALSE)
-ngconv(a, b, b0 = 0, give=FALSE)
+gconvergents(a, b, b0 = 0)
+nconv(a, give = FALSE)
+ngconv(a, b, b0 = 0, give = FALSE)
 }
 \arguments{
-  \item{a,b}{In function \code{convergents()}, the elements of \code{a}
+  \item{a, b}{In function \code{convergents()}, the elements of \code{a}
     are the partial denominators (the first element of \code{a} is the
     integer part of the continued fraction).   In \code{gconvergents()}
     the elements of \code{a} are the partial numerators and the elements
@@ -83,7 +83,7 @@ jj$A/jj$B - pi     # should get smaller
 
 convergents(rep(1,10))
 
-nconv(1:6,give=TRUE)
+nconv(1:6, give=TRUE)
 
 }
 \keyword{math}
